@@ -1,0 +1,1034 @@
+{
+  "id": "bitcoin",
+  "name": "Bitcoin",
+  "symbol": "btc",
+  "market_cap_rank": 1,
+  "asset_platform_id": "",
+  "image": {
+    "thumb": "https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579",
+    "small": "https://assets.coingecko.com/coins/images/1/small/bitcoin.png?1547033579",
+    "large": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
+  },
+  "market_data": {
+    "current_price": {
+      "aed": 107821,
+      "ars": 6385606,
+      "aud": 43683,
+      "bch": 229.887,
+      "bdt": 3118141,
+      "bhd": 11069.37,
+      "bits": 1000108,
+      "bmd": 29360,
+      "bnb": 89.547,
+      "brl": 148261,
+      "btc": 1,
+      "cad": 39477,
+      "chf": 26347,
+      "clp": 23343082,
+      "cny": 202186,
+      "czk": 627242,
+      "dkk": 199553,
+      "dot": 4527,
+      "eos": 26060,
+      "eth": 14.784711,
+      "eur": 26779,
+      "gbp": 23584,
+      "hkd": 230465,
+      "huf": 10135251,
+      "idr": 439430960,
+      "ils": 107106,
+      "inr": 2412826,
+      "jpy": 3955389,
+      "krw": 39050857,
+      "kwd": 9001.42,
+      "link": 3637,
+      "lkr": 9427753,
+      "ltc": 311.152,
+      "mmk": 61672719,
+      "mxn": 529642,
+      "myr": 130372,
+      "ngn": 13521061,
+      "nok": 310478,
+      "nzd": 47271,
+      "php": 1652295,
+      "pkr": 8237832,
+      "pln": 123765,
+      "rub": 2398694,
+      "sar": 110112,
+      "sats": 100010768,
+      "sek": 303416,
+      "sgd": 39164,
+      "thb": 1011151,
+      "try": 569650,
+      "twd": 897831,
+      "uah": 1084618,
+      "usd": 29360,
+      "vef": 2939.8,
+      "vnd": 690331123,
+      "xag": 1160.24,
+      "xau": 14.71,
+      "xdr": 21767,
+      "xlm": 296798,
+      "xrp": 58935,
+      "yfi": 3.414031,
+      "zar": 532433
+    },
+    "market_cap": {
+      "aed": 2086895744683,
+      "ars": 123577880728196,
+      "aud": 845965616759,
+      "bch": 4449296183,
+      "bdt": 60352281077578,
+      "bhd": 214213676836,
+      "bits": 19353640723133,
+      "bmd": 568264825368,
+      "bnb": 1732513246,
+      "brl": 2867862094187,
+      "btc": 19350787,
+      "cad": 764261636697,
+      "chf": 510266012497,
+      "clp": 451531864941256,
+      "cny": 3913355719900,
+      "czk": 12148901878722,
+      "dkk": 3864935010660,
+      "dot": 87509121488,
+      "eos": 503693214301,
+      "eth": 285718423,
+      "eur": 518642236023,
+      "gbp": 456690004761,
+      "hkd": 4460796480743,
+      "huf": 196294454806048,
+      "idr": 8507958934035183,
+      "ils": 2073067020158,
+      "inr": 46699890832343,
+      "jpy": 76593705625759,
+      "krw": 756197677534251,
+      "kwd": 174222039750,
+      "link": 70309992909,
+      "lkr": 182476159076783,
+      "ltc": 6012302831,
+      "mmk": 1193688560240860,
+      "mxn": 10254933747046,
+      "myr": 2523379957049,
+      "ngn": 261703000026928,
+      "nok": 6012853873615,
+      "nzd": 915653637089,
+      "php": 31986772349692,
+      "pkr": 159444996021023,
+      "pln": 2396863749388,
+      "rub": 46427235096072,
+      "sar": 2131246541244,
+      "sats": 1935364072313320,
+      "sek": 5876397577629,
+      "sgd": 758423852146,
+      "thb": 19576723233943,
+      "try": 11025190009386,
+      "twd": 17390892014898,
+      "uah": 20993016477387,
+      "usd": 568264825368,
+      "vef": 56900356964,
+      "vnd": 13361505416670828,
+      "xag": 22489375962,
+      "xau": 284990493,
+      "xdr": 421306427145,
+      "xlm": 5739315702763,
+      "xrp": 1138240877827,
+      "yfi": 65979083,
+      "zar": 10310833389652
+    },
+    "price_change_percentage_1h_in_currency": {
+      "aed": 0.48073,
+      "ars": 0.4789,
+      "aud": 0.43881,
+      "bch": -0.08712,
+      "bdt": 0.48073,
+      "bhd": 0.48233,
+      "bits": 0.05486,
+      "bmd": 0.48073,
+      "bnb": 0.20972,
+      "brl": 0.52054,
+      "btc": 0,
+      "cad": 0.53696,
+      "chf": 0.37715,
+      "clp": 0.53384,
+      "cny": 0.47343,
+      "czk": 0.4168,
+      "dkk": 0.3844,
+      "dot": 0.17589,
+      "eos": 0.61215,
+      "eth": 0.31993,
+      "eur": 0.38608,
+      "gbp": 0.389,
+      "hkd": 0.47874,
+      "huf": 0.5602,
+      "idr": 0.43749,
+      "ils": 0.48073,
+      "inr": 0.46462,
+      "jpy": 0.45286,
+      "krw": 0.37934,
+      "kwd": 0.48401,
+      "link": -0.15217,
+      "lkr": 0.48073,
+      "ltc": 0.91374,
+      "mmk": 0.48073,
+      "mxn": 0.41199,
+      "myr": 0.48073,
+      "ngn": 0.48073,
+      "nok": 0.42102,
+      "nzd": 0.40309,
+      "php": 0.45395,
+      "pkr": 0.48073,
+      "pln": 0.45106,
+      "rub": 0.39944,
+      "sar": 0.48408,
+      "sats": 0.05486,
+      "sek": 0.40017,
+      "sgd": 0.43104,
+      "thb": 0.46149,
+      "try": 0.48094,
+      "twd": 0.47908,
+      "uah": 0.48073,
+      "usd": 0.48073,
+      "vef": 0.48073,
+      "vnd": 0.48073,
+      "xag": 0.14917,
+      "xau": 0.25868,
+      "xdr": 0.48073,
+      "xlm": 0.33227,
+      "xrp": 0.29677,
+      "yfi": 0.55109,
+      "zar": 0.44224
+    },
+    "price_change_percentage_24h_in_currency": {
+      "aed": -2.86885,
+      "ars": -2.60464,
+      "aud": -2.75198,
+      "bch": 1.2472,
+      "bdt": -2.8896,
+      "bhd": -2.8624,
+      "bits": -0.01037,
+      "bmd": -2.86885,
+      "bnb": 1.45723,
+      "brl": -1.30927,
+      "btc": 0,
+      "cad": -2.45883,
+      "chf": -2.88616,
+      "clp": -2.89694,
+      "cny": -2.71769,
+      "czk": -2.93291,
+      "dkk": -2.85723,
+      "dot": 3.56005,
+      "eos": 4.54968,
+      "eth": 2.56307,
+      "eur": -2.8731,
+      "gbp": -3.07481,
+      "hkd": -2.87243,
+      "huf": -0.88233,
+      "idr": -2.35439,
+      "ils": -2.82996,
+      "inr": -2.75339,
+      "jpy": -2.45081,
+      "krw": -2.05883,
+      "kwd": -2.82637,
+      "link": 3.86627,
+      "lkr": -3.18623,
+      "ltc": 4.28797,
+      "mmk": -2.88634,
+      "mxn": -3.00634,
+      "myr": -2.73742,
+      "ngn": -3.80256,
+      "nok": -1.92362,
+      "nzd": -2.99399,
+      "php": -2.7695,
+      "pkr": -3.98706,
+      "pln": -2.93083,
+      "rub": -3.02315,
+      "sar": -2.86885,
+      "sats": -0.01037,
+      "sek": -2.71309,
+      "sgd": -2.80232,
+      "thb": -2.41418,
+      "try": -2.87415,
+      "twd": -2.70085,
+      "uah": -2.40848,
+      "usd": -2.86885,
+      "vef": -2.86885,
+      "vnd": -2.77451,
+      "xag": -3.38704,
+      "xau": -2.36429,
+      "xdr": -2.87474,
+      "xlm": 3.0383,
+      "xrp": 1.25002,
+      "yfi": 2.33557,
+      "zar": -3.09586
+    },
+    "price_change_percentage_7d_in_currency": {
+      "aed": -2.97623,
+      "ars": -1.28186,
+      "aud": -3.96876,
+      "bch": -1.90561,
+      "bdt": -3.13416,
+      "bhd": -2.96816,
+      "bits": 0.01172,
+      "bmd": -2.97794,
+      "bnb": -4.46753,
+      "brl": -2.12318,
+      "btc": 0,
+      "cad": -3.10823,
+      "chf": -3.59949,
+      "clp": -4.34723,
+      "cny": -2.98499,
+      "czk": -3.60691,
+      "dkk": -3.38743,
+      "dot": -3.85015,
+      "eos": 6.30718,
+      "eth": -7.51638,
+      "eur": -3.39788,
+      "gbp": -3.13133,
+      "hkd": -2.9797,
+      "huf": -2.7691,
+      "idr": -2.66085,
+      "ils": -3.32206,
+      "inr": -2.84676,
+      "jpy": -2.16044,
+      "krw": -2.41664,
+      "kwd": -2.92918,
+      "link": -12.12831,
+      "lkr": -2.53982,
+      "ltc": -3.11539,
+      "mmk": -2.99528,
+      "mxn": -3.70815,
+      "myr": -2.49486,
+      "ngn": -3.28963,
+      "nok": -2.82927,
+      "nzd": -3.27508,
+      "php": -0.83887,
+      "pkr": -5.66716,
+      "pln": -4.35946,
+      "rub": -3.29753,
+      "sar": -3.00776,
+      "sats": 0.01172,
+      "sek": -4.03468,
+      "sgd": -2.87441,
+      "thb": -2.43336,
+      "try": -2.46671,
+      "twd": -2.78657,
+      "uah": -2.99611,
+      "usd": -2.97794,
+      "vef": -2.97794,
+      "vnd": -2.72701,
+      "xag": -3.92518,
+      "xau": -2.52674,
+      "xdr": -3.06855,
+      "xlm": 3.17168,
+      "xrp": 0.78191,
+      "yfi": 4.02233,
+      "zar": -4.23827
+    }
+  },
+  "tickers": [
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29334.8,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29334.18,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29346,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29326.2,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29355.26,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29328.277,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29335.7,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDC",
+      "last": 29349.74,
+      "coin_id": "bitcoin",
+      "target_coin_id": "usd-coin"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29336.1,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29326.34,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "BUSD",
+      "last": 29347.5,
+      "coin_id": "bitcoin",
+      "target_coin_id": "binance-usd"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.067728,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "BUSD",
+      "last": 29329.99,
+      "coin_id": "bitcoin",
+      "target_coin_id": "binance-usd"
+    },
+    {
+      "base": "WBTC",
+      "target": "BTC",
+      "last": 1.0001,
+      "coin_id": "wrapped-bitcoin",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "BUSD",
+      "last": 29252.69,
+      "coin_id": "bitcoin",
+      "target_coin_id": "binance-usd"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29329.6,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29321.05,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29342.25,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29327.78,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29364,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29345.3,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29356.19,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29336.07,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "GBP",
+      "last": 23587,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29326.4,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29325.36,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "EUR",
+      "last": 26801,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "EUR",
+      "last": 26809,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29335.61,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29356.2,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29384.52,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29353.5,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29333.98,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29335,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.067633,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "USDC",
+      "last": 29335,
+      "coin_id": "bitcoin",
+      "target_coin_id": "usd-coin"
+    },
+    {
+      "base": "BTC",
+      "target": "EUR",
+      "last": 26805.2,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "XRP",
+      "target": "BTC",
+      "last": 0.00001701,
+      "coin_id": "ripple",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29327.4,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "BUSD",
+      "last": 29347.1,
+      "coin_id": "bitcoin",
+      "target_coin_id": "binance-usd"
+    },
+    {
+      "base": "BTC",
+      "target": "JPY",
+      "last": 3959089,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "WBTC",
+      "target": "BTC",
+      "last": 1.00039,
+      "coin_id": "wrapped-bitcoin",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "BUSD",
+      "last": 29367.41,
+      "coin_id": "bitcoin",
+      "target_coin_id": "binance-usd"
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29352.33,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29333.52,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29324.73,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.06766638,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "JPY",
+      "last": 3966500,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29322,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29329.86,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.067612,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29328.3,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29330.01,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29325.92,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29330.38,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "GBP",
+      "last": 23583,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.06764899,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.06762,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.067609,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.06760979,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29350.91,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "BUSD",
+      "last": 29336.75,
+      "coin_id": "bitcoin",
+      "target_coin_id": "binance-usd"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29333.49,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.067638,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "EUR",
+      "last": 26794.97,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "FNB",
+      "target": "BTC",
+      "last": 0.00002993,
+      "coin_id": "finexbox-token",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "XRP",
+      "target": "BTC",
+      "last": 0.00001696,
+      "coin_id": "ripple",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29330.676,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "EUR",
+      "last": 26891.2,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29325.01,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "BUSD",
+      "last": 29339.99,
+      "coin_id": "bitcoin",
+      "target_coin_id": "binance-usd"
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29350.35,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29335.96,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDC",
+      "last": 29344.54,
+      "coin_id": "bitcoin",
+      "target_coin_id": "usd-coin"
+    },
+    {
+      "base": "BTC",
+      "target": "EUR",
+      "last": 26803.09,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29327.89,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "BUSD",
+      "last": 29330.31,
+      "coin_id": "bitcoin",
+      "target_coin_id": "binance-usd"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.06763,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "USDC",
+      "last": 29345.51,
+      "coin_id": "bitcoin",
+      "target_coin_id": "usd-coin"
+    },
+    {
+      "base": "BTC",
+      "target": "USDC",
+      "last": 29370.46,
+      "coin_id": "bitcoin",
+      "target_coin_id": "usd-coin"
+    },
+    {
+      "base": "DOGE",
+      "target": "BTC",
+      "last": 0.00000309,
+      "coin_id": "dogecoin",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.067609,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29324.5,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "EUR",
+      "last": 26804,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29325.43,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDC",
+      "last": 29342.9,
+      "coin_id": "bitcoin",
+      "target_coin_id": "usd-coin"
+    },
+    {
+      "base": "XRP",
+      "target": "BTC",
+      "last": 0.000017005,
+      "coin_id": "ripple",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "BUSD",
+      "last": 29347.5,
+      "coin_id": "bitcoin",
+      "target_coin_id": "binance-usd"
+    },
+    {
+      "base": "BTC",
+      "target": "JPY",
+      "last": 3966467,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "TRX",
+      "target": "BTC",
+      "last": 0.00000225,
+      "coin_id": "tron",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.06762,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "DASH",
+      "target": "BTC",
+      "last": 0.00185038,
+      "coin_id": "dash",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "BTC",
+      "target": "GBP",
+      "last": 23582.4,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "KRW",
+      "last": 38986000,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29329.13,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USDT",
+      "last": 29334.79,
+      "coin_id": "bitcoin",
+      "target_coin_id": "tether"
+    },
+    {
+      "base": "BTC",
+      "target": "USD",
+      "last": 29336,
+      "coin_id": "bitcoin",
+      "target_coin_id": ""
+    },
+    {
+      "base": "BTC",
+      "target": "USDC",
+      "last": 29344.21,
+      "coin_id": "bitcoin",
+      "target_coin_id": "usd-coin"
+    },
+    {
+      "base": "ETH",
+      "target": "BTC",
+      "last": 0.06762839,
+      "coin_id": "ethereum",
+      "target_coin_id": "bitcoin"
+    },
+    {
+      "base": "WBTC",
+      "target": "BTC",
+      "last": 1,
+      "coin_id": "wrapped-bitcoin",
+      "target_coin_id": "bitcoin"
+    }
+  ],
+  "description": {
+    "en": "Bitcoin is the first successful internet money based on peer-to-peer technology; whereby no central bank or authority is involved in the transaction and production of the Bitcoin currency. It was created by an anonymous individual/group under the name, Satoshi Nakamoto. The source code is available publicly as an open source project, anybody can look at it and be part of the developmental process.\r\n\r\nBitcoin is changing the way we see money as we speak. The idea was to produce a means of exchange, independent of any central authority, that could be transferred electronically in a secure, verifiable and immutable way. It is a decentralized peer-to-peer internet currency making mobile payment easy, very low transaction fees, protects your identity, and it works anywhere all the time with no central authority and banks.\r\n\r\nBitcoin is designed to have only 21 million BTC ever created, thus making it a deflationary currency. Bitcoin uses the \u003ca href=\"https://www.coingecko.com/en?hashing_algorithm=SHA-256\"\u003eSHA-256\u003c/a\u003e hashing algorithm with an average transaction confirmation time of 10 minutes. Miners today are mining Bitcoin using ASIC chip dedicated to only mining Bitcoin, and the hash rate has shot up to peta hashes.\r\n\r\nBeing the first successful online cryptography currency, Bitcoin has inspired other alternative currencies such as \u003ca href=\"https://www.coingecko.com/en/coins/litecoin\"\u003eLitecoin\u003c/a\u003e, \u003ca href=\"https://www.coingecko.com/en/coins/peercoin\"\u003ePeercoin\u003c/a\u003e, \u003ca href=\"https://www.coingecko.com/en/coins/primecoin\"\u003ePrimecoin\u003c/a\u003e, and so on.\r\n\r\nThe cryptocurrency then took off with the innovation of the turing-complete smart contract by \u003ca href=\"https://www.coingecko.com/en/coins/ethereum\"\u003eEthereum\u003c/a\u003e which led to the development of other amazing projects such as \u003ca href=\"https://www.coingecko.com/en/coins/eos\"\u003eEOS\u003c/a\u003e, \u003ca href=\"https://www.coingecko.com/en/coins/tron\"\u003eTron\u003c/a\u003e, and even crypto-collectibles such as \u003ca href=\"https://www.coingecko.com/buzz/ethereum-still-king-dapps-cryptokitties-need-1-billion-on-eos\"\u003eCryptoKitties\u003c/a\u003e."
+  }
+}
