@@ -9,6 +9,7 @@ export interface IToken {
   name: string;
   guild_default: boolean;
   is_native: boolean;
+  is_favorite?: boolean;
 }
 
 type CoinTicker = {

@@ -1,12 +1,22 @@
-import { Action, ActionPanel, Form, Icon, Toast, showToast, useNavigation } from "@raycast/api";
+import { Action, ActionPanel, List, LocalStorage, useNavigation } from "@raycast/api";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import TokenDetail from "./components/TokenDetail";
 import { IToken, ITokenCoingecko } from "./type/token";
 
 export default function Command() {
+  const { push } = useNavigation();
   const [tokens, setTokens] = useState<IToken[]>([]);
   const [tokenData, setTokenData] = useState<ITokenCoingecko>();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const [searchTokenText, setSearchTokenText] = useState("");
+
+  const [filteredList, filterList] = useState<IToken[]>([]);
+
+  useEffect(() => {
+    filterList(tokens.filter((token) => token.name.includes(searchTokenText)));
+  }, [searchTokenText, tokens]);
 
   const getTokens = async () => {
     const res = await axios.get("https://api.mochi.pod.town/api/v1/defi/tokens");
@@ -14,49 +24,90 @@ export default function Command() {
   };
 
   const getTokenInformation = async (tokenId: string) => {
+    setIsLoading(true);
+
     const req = await axios.get(`https://api.mochi.pod.town/api/v1/defi/coins/${tokenId}`);
-    console.log(req.data);
     return req.data;
   };
 
+  const addTokenToFavorite = async (coingecko_id: string) => {
+    const favorite = await LocalStorage.getItem("favoritesCoin");
+    const listFavorite = favorite?.toString().split(",") || [];
+    listFavorite.push(coingecko_id);
+    await LocalStorage.setItem("favoritesCoin", listFavorite.join(","));
+    await getListTokens();
+  };
+
+  const removeTokenFromFavorite = async (coingecko_id: string) => {
+    const favorite = await LocalStorage.getItem("favoritesCoin");
+    const listFavorite = favorite?.toString().split(",") || [];
+    await LocalStorage.setItem("favoritesCoin", listFavorite.filter((id) => id !== coingecko_id).join(","));
+    await getListTokens();
+  };
+
+  const getListTokens = useCallback(async () => {
+    let listTokens = [];
+    if (tokens.length > 0) {
+      listTokens = [...tokens];
+    } else {
+      const req = await getTokens();
+      listTokens = req.data.data as IToken[];
+    }
+    const favorite = await LocalStorage.getItem("favoritesCoin");
+    if (favorite) {
+      const listFavorite = favorite.toString().split(",");
+      const newListTokens = listTokens.map((token) => ({
+        ...token,
+        is_favorite: listFavorite.includes(token.coin_gecko_id),
+      }));
+      setTokens(newListTokens);
+    } else setTokens(listTokens);
+  }, [tokens]);
+
   useEffect(() => {
-    getTokens()
-      .then((data) => {
-        setTokens(data.data.data);
-      })
-      .catch(() => setTokens([]));
+    getListTokens();
   }, []);
 
   return (
-    <Form
-      actions={
-        <ActionPanel>
-          <ShareSecretAction />
-        </ActionPanel>
-      }
+    <List
+      isLoading={isLoading}
+      filtering={false}
+      onSearchTextChange={setSearchTokenText}
+      navigationTitle="Search Tokens"
+      searchBarPlaceholder="Search your favorite Tokens"
     >
-      <Form.Dropdown id="token" title="Choose a token" storeValue>
-        {tokens.map((token) => (
-          <Form.Dropdown.Item key={token.address} value={token.coin_gecko_id} title={token.symbol} />
-        ))}
-      </Form.Dropdown>
-    </Form>
+      {filteredList.map((item) => (
+        <List.Item
+          key={item.address}
+          title={item.name}
+          subtitle={item.symbol}
+          accessories={[
+            {
+              text: item.is_favorite ? "⭐️" : "",
+            },
+          ]}
+          actions={
+            <ActionPanel>
+              <Action
+                title="Check Detail"
+                onAction={async () => {
+                  const req = await axios.get(`https://api.mochi.pod.town/api/v1/defi/coins/${item.coin_gecko_id}`);
+                  push(<TokenDetail data={req.data.data} />);
+                }}
+              />
+              <Action.OpenInBrowser
+                title="Check on Coingecko"
+                url={`https://www.coingecko.com/en/coins/${item.coin_gecko_id}`}
+              />
+              {item.is_favorite ? (
+                <Action title="Remove Favorite" onAction={async () => removeTokenFromFavorite(item.coin_gecko_id)} />
+              ) : (
+                <Action title="Add Favorite" onAction={async () => addTokenToFavorite(item.coin_gecko_id)} />
+              )}
+            </ActionPanel>
+          }
+        />
+      ))}
+    </List>
   );
-}
-
-function ShareSecretAction() {
-  const { push } = useNavigation();
-  async function handleSubmit(values: { token: string }) {
-    if (!values.token) {
-      showToast({
-        style: Toast.Style.Failure,
-        title: "Secret is required",
-      });
-      return;
-    }
-    const req = await axios.get(`https://api.mochi.pod.town/api/v1/defi/coins/${values.token}`);
-    push(<TokenDetail data={req.data.data} />);
-  }
-
-  return <Action.SubmitForm icon={Icon.Upload} title="Get Token Information" onSubmit={handleSubmit} />;
 }
