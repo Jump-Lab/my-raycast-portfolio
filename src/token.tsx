@@ -1,6 +1,7 @@
 import { Action, ActionPanel, List, LocalStorage, useNavigation } from "@raycast/api";
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
+import PortfolioInput from "./components/PortfolioInput";
 import TokenDetail from "./components/TokenDetail";
 import { IToken, ITokenCoingecko } from "./type/token";
 
@@ -93,6 +94,14 @@ export default function Command() {
                 onAction={async () => {
                   const req = await axios.get(`https://api.mochi.pod.town/api/v1/defi/coins/${item.coin_gecko_id}`);
                   push(<TokenDetail data={req.data.data} />);
+                }}
+              />
+              <Action
+                title="Enter Portfolio"
+                onAction={() => {
+                  push(
+                    <PortfolioInput tokenName={item.name} tokenSymbol={item.symbol} coingeckoId={item.coin_gecko_id} />
+                  );
                 }}
               />
               <Action.OpenInBrowser

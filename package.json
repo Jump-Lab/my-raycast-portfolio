@@ -15,6 +15,12 @@
       "title": "token",
       "description": "",
       "mode": "view"
+    },
+    {
+      "name": "portfolio",
+      "title": "portfolio",
+      "description": "",
+      "mode": "view"
     }
   ],
   "dependencies": {

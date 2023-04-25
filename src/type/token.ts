@@ -41,3 +41,12 @@ export interface ITokenCoingecko {
   tickers: CoinTicker[];
   description: Record<string, string>;
 }
+
+export type IPortfolio = Record<string, ITokenPortfolio>;
+
+export interface ITokenPortfolio {
+  tokenName: string;
+  amount: number;
+  coingeckoId: string;
+  symbol: string;
+}
