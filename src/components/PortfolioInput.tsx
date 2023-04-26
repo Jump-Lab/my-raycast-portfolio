@@ -1,5 +1,6 @@
 import { Action, ActionPanel, Form, LocalStorage, popToRoot } from "@raycast/api";
 import { useState } from "react";
+import { LOCALSTORAGE_PORTFOLIO } from "../constant";
 import { ITokenPortfolio } from "../type/token";
 
 type Props = {
@@ -14,7 +15,7 @@ const PortfolioInput: React.FC<Props> = ({ tokenName, tokenSymbol, coingeckoId }
   const handleSubmitForm = async (amount: number) => {
     try {
       setLoading(true);
-      const req = await LocalStorage.getItem("portfolio");
+      const req = await LocalStorage.getItem(LOCALSTORAGE_PORTFOLIO);
       const listTokens: Record<string, ITokenPortfolio> = req ? JSON.parse(req.toString()) : {};
 
       listTokens[tokenSymbol] = {
@@ -24,7 +25,7 @@ const PortfolioInput: React.FC<Props> = ({ tokenName, tokenSymbol, coingeckoId }
         symbol: tokenSymbol,
       };
 
-      await LocalStorage.setItem("portfolio", JSON.stringify(listTokens));
+      await LocalStorage.setItem(LOCALSTORAGE_PORTFOLIO, JSON.stringify(listTokens));
       popToRoot();
       setLoading(false);
     } catch (error) {
