@@ -1,0 +1,379 @@
+[debug] [2023-04-24T14:04:25.841Z] ----------------------------------------------------------------------
+[debug] [2023-04-24T14:04:25.844Z] Command:       /Users/phongvu/.nvm/versions/node/v16.10.0/bin/node /usr/local/bin/firebase emulators:start --only functions
+[debug] [2023-04-24T14:04:25.845Z] CLI Version:   11.14.2
+[debug] [2023-04-24T14:04:25.845Z] Platform:      darwin
+[debug] [2023-04-24T14:04:25.845Z] Node Version:  v16.10.0
+[debug] [2023-04-24T14:04:25.854Z] Time:          Mon Apr 24 2023 21:04:25 GMT+0700 (Indochina Time)
+[debug] [2023-04-24T14:04:25.854Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-24T14:04:25.941Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-24T14:04:25.941Z] > authorizing via signed-in user (caophong.w@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-04-24T14:04:25.947Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-24T14:04:25.947Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-04-24T14:04:25.960Z] [hub] writing locator at /var/folders/kj/6qyqtwbx3vd_6f1bnd5vkdb80000gn/T/hub-token-tracker-1cc4f.json
+[debug] [2023-04-24T14:04:25.999Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-24T14:04:25.999Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-24T14:04:25.999Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2023-04-24T14:04:26.023Z] defaultcredentials: writing to file /Users/phongvu/.config/firebase/caophong_w_gmail.com_application_default_credentials.json
+[debug] [2023-04-24T14:04:26.028Z] Setting GAC to /Users/phongvu/.config/firebase/caophong_w_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/phongvu/.config/firebase/caophong_w_gmail.com_application_default_credentials.json"}}
+[debug] [2023-04-24T14:04:26.030Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/token-tracker-1cc4f/adminSdkConfig [none]
+[debug] [2023-04-24T14:04:28.590Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/token-tracker-1cc4f/adminSdkConfig 200
+[debug] [2023-04-24T14:04:28.591Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/token-tracker-1cc4f/adminSdkConfig {"projectId":"token-tracker-1cc4f","storageBucket":"token-tracker-1cc4f.appspot.com"}
+[debug] [2023-04-24T14:04:28.615Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-04-24T14:04:28.616Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-04-24T14:04:28.616Z] Starting Emulator UI with command {"binary":"node","args":["/Users/phongvu/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/phongvu/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-04-24T14:04:28.749Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-04-24T14:04:28.750Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions\" for Cloud Functions..."}}
+[debug] [2023-04-24T14:04:28.889Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-04-24T14:04:31.157Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2023-04-24T14:04:31.157Z] Building nodejs source
+[debug] [2023-04-24T14:04:31.157Z] Analyzing nodejs backend spec
+[debug] [2023-04-24T14:04:31.159Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-04-24T14:04:31.362Z] Serving at port 9005
+
+[debug] [2023-04-24T14:04:31.406Z] Log ~ serviceAccount: {
+  type: 'service_account',
+  project_id: 'token-tracker-1cc4f',
+  private_key_id: '887840916988f05ae13617530e46ca729b5eede2',
+  private_key: '-----BEGIN PRIVATE KEY-----\n' +
+    'MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD1lZMDE9ikC1ua\n' +
+    'UPWUfuGxgLcOtviYSHj+/V2+4o8pe1CEDWlq94dQe6u541KARUHm1elcQLAS68BV\n' +
+    'se4B4WhQz4apqXuUrf2l1AQhxSSiyhfTqsDyXDyTYfzb8wDBfmtx0Xg6YEfptEri\n' +
+    'aM4XDPhuUHlv76pcKoVmN+73J8Hkx1wa+6ainaXuIwXGCOJpAEmPc+UfM+09PoP6\n' +
+    '4EVyZfJzWEqBm4td2vOmG3Gb/ORySByYWVb+6AfbzZspaZ6jHfK2y+dE8oCdBGl6\n' +
+    'BiV2nvlH2ruZaExEyVarlk13qNinaHtRZApjJ52EUodeZBH8oEpN5ALyg8HdZ477\n' +
+    '7sid7fQFAgMBAAECggEABsexCK4M68Up1kIomtzrO4yjgSh+sdWZDDvP0Wv31TFZ\n' +
+    'BmGdvhzvWMLRTuR+a+7S5EiWP2cZyqvvjMNzdWHVEMYUoFfULZqlcg/pvUpFZKkn\n' +
+    'rJRTl11XNB/JwgNyIJAY70oqg5ISP4WBZmwg+cnwjJB0NH7tY8tYu3sNLI2lxhHH\n' +
+    'xKY59kFLjDKTHnXk6lzS4eP+wtDSWCmzO+L+mfJJWwga2Awia0Q4I62scj/Gr0TC\n' +
+    'tbssXM6+6U6ZG97KXa6TbyHfJbSR4GXwVqbvZu9fILHWB8HQlPW9z24+B/5uWTrH\n' +
+    '7O4++UjCA060r0wlglOIWD5CYYtKkoWruGLdhd17UQKBgQD9x2P6XhnoAZ8sFBIN\n' +
+    'GsRKy6MyaRCEcVG717Ao9n8ZePZjsG6O9/wXaMntMYYOmeeLGlxYmQ3lM6M2nLPU\n' +
+    'ZGuvt8sFJIdyaBH0K//WJ60P8FWMdk4CFjft1Q4hEgSBuMzxBGB/8Z9piy2LMzy+\n' +
+    'JJjJPUJpim2c0iEFk1sxtYDyRwKBgQD3u9K6iXo+Ly+esIASNCSdafzAFdf5Kg5C\n' +
+    'KLiIEiGd7qsFi7U4eU4/rF3DDyAcuYRSIUhYw7zvJchUWosG7H/sKdTLK8b85w9o\n' +
+    'A/zGdcrB54N6X03uq7FG51CAyP7wKkARyxphkpWCENAXzjgxKNA6ioJKAxwqQiOB\n' +
+    '8t6XXtnhUwKBgGGSAJlpBpLR1M3QpaQOL3wGUSd3h5c0LlWHNr55DyLPBAQN+GPV\n' +
+    'akHh0wjz6nPArmon52tU5SfDM7QyiV1WgqSbiF3gzoapBoYXSJSgyoP/RhTsA1AA\n' +
+    'FN7G9Fi4oazyTTE5GpT2Y/DjRs5nE6qTTX7Jo7gKNdx+WZ3YKs6w1vPPAoGBANsm\n' +
+    'HTGE4k3WQiL4ciMoW2ehVcS6zhaN3JUsHqnImFJ0yneaclKmBNGQ8lTWsYqXlnVt\n' +
+    'GenkJePMoZ31ht02I6fQDX05mcspv9g9BsSteRL1cbq0SmWjHqzhfbafl97vEURs\n' +
+    'TkcYfAfWRa95bv4V47aVxtIgVC8R2QVgywZPEyEfAoGBAOsTMh2BsJKoS9td5iky\n' +
+    'nx0zo+qTKG2M/h3Rk6aszysSGC5YS/p3se3XXyfsAiWSqIWlenx5uvdGbvOa/N3p\n' +
+    '9frhxR2wicI41NJGeTpJgsKD04J4burC60aBCBRQiPevA5Y+yzimMV2c5PX6Jvqm\n' +
+    'lLgXkD7Zo7ZuvBInXe14SMO/\n' +
+    '-----END PRIVATE KEY-----\n',
+  client_email: 'firebase-adminsdk-7gyil@token-tracker-1cc4f.iam.gserviceaccount.com',
+  client_id: '106882706145458370886',
+  auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+  token_uri: 'https://oauth2.googleapis.com/token',
+  auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+  client_x509_cert_url: 'https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-7gyil%40token-tracker-1cc4f.iam.gserviceaccount.com'
+}
+
+[debug] [2023-04-24T14:04:31.468Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-04-24T14:04:31.475Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] ✔  functions[us-central1-app]: http function initialized (http://127.0.0.1:5001/token-tracker-1cc4f/us-central1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/token-tracker-1cc4f/us-central1/app)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-04-24T14:05:38.909Z] Functions emulator received unknown request at path /
+[debug] [2023-04-24T14:05:46.956Z] Functions emulator received unknown request at path /portfolio
+[debug] [2023-04-24T14:06:00.855Z] Functions emulator received unknown request at path /portfolio
+[debug] [2023-04-24T14:06:46.064Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/src/api/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/src/api/index.ts changed, reloading triggers"}}
+[debug] [2023-04-24T14:06:47.069Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-04-24T14:06:49.340Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2023-04-24T14:06:49.340Z] Building nodejs source
+[debug] [2023-04-24T14:06:49.341Z] Analyzing nodejs backend spec
+[debug] [2023-04-24T14:06:49.341Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-04-24T14:06:49.530Z] Serving at port 9005
+
+[debug] [2023-04-24T14:06:49.588Z] Log ~ serviceAccount: {
+  type: 'service_account',
+  project_id: 'token-tracker-1cc4f',
+  private_key_id: '887840916988f05ae13617530e46ca729b5eede2',
+  private_key: '-----BEGIN PRIVATE KEY-----\n' +
+    'MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD1lZMDE9ikC1ua\n' +
+    'UPWUfuGxgLcOtviYSHj+/V2+4o8pe1CEDWlq94dQe6u541KARUHm1elcQLAS68BV\n' +
+    'se4B4WhQz4apqXuUrf2l1AQhxSSiyhfTqsDyXDyTYfzb8wDBfmtx0Xg6YEfptEri\n' +
+    'aM4XDPhuUHlv76pcKoVmN+73J8Hkx1wa+6ainaXuIwXGCOJpAEmPc+UfM+09PoP6\n' +
+    '4EVyZfJzWEqBm4td2vOmG3Gb/ORySByYWVb+6AfbzZspaZ6jHfK2y+dE8oCdBGl6\n' +
+    'BiV2nvlH2ruZaExEyVarlk13qNinaHtRZApjJ52EUodeZBH8oEpN5ALyg8HdZ477\n' +
+    '7sid7fQFAgMBAAECggEABsexCK4M68Up1kIomtzrO4yjgSh+sdWZDDvP0Wv31TFZ\n' +
+    'BmGdvhzvWMLRTuR+a+7S5EiWP2cZyqvvjMNzdWHVEMYUoFfULZqlcg/pvUpFZKkn\n' +
+    'rJRTl11XNB/JwgNyIJAY70oqg5ISP4WBZmwg+cnwjJB0NH7tY8tYu3sNLI2lxhHH\n' +
+    'xKY59kFLjDKTHnXk6lzS4eP+wtDSWCmzO+L+mfJJWwga2Awia0Q4I62scj/Gr0TC\n' +
+    'tbssXM6+6U6ZG97KXa6TbyHfJbSR4GXwVqbvZu9fILHWB8HQlPW9z24+B/5uWTrH\n' +
+    '7O4++UjCA060r0wlglOIWD5CYYtKkoWruGLdhd17UQKBgQD9x2P6XhnoAZ8sFBIN\n' +
+    'GsRKy6MyaRCEcVG717Ao9n8ZePZjsG6O9/wXaMntMYYOmeeLGlxYmQ3lM6M2nLPU\n' +
+    'ZGuvt8sFJIdyaBH0K//WJ60P8FWMdk4CFjft1Q4hEgSBuMzxBGB/8Z9piy2LMzy+\n' +
+    'JJjJPUJpim2c0iEFk1sxtYDyRwKBgQD3u9K6iXo+Ly+esIASNCSdafzAFdf5Kg5C\n' +
+    'KLiIEiGd7qsFi7U4eU4/rF3DDyAcuYRSIUhYw7zvJchUWosG7H/sKdTLK8b85w9o\n' +
+    'A/zGdcrB54N6X03uq7FG51CAyP7wKkARyxphkpWCENAXzjgxKNA6ioJKAxwqQiOB\n' +
+    '8t6XXtnhUwKBgGGSAJlpBpLR1M3QpaQOL3wGUSd3h5c0LlWHNr55DyLPBAQN+GPV\n' +
+    'akHh0wjz6nPArmon52tU5SfDM7QyiV1WgqSbiF3gzoapBoYXSJSgyoP/RhTsA1AA\n' +
+    'FN7G9Fi4oazyTTE5GpT2Y/DjRs5nE6qTTX7Jo7gKNdx+WZ3YKs6w1vPPAoGBANsm\n' +
+    'HTGE4k3WQiL4ciMoW2ehVcS6zhaN3JUsHqnImFJ0yneaclKmBNGQ8lTWsYqXlnVt\n' +
+    'GenkJePMoZ31ht02I6fQDX05mcspv9g9BsSteRL1cbq0SmWjHqzhfbafl97vEURs\n' +
+    'TkcYfAfWRa95bv4V47aVxtIgVC8R2QVgywZPEyEfAoGBAOsTMh2BsJKoS9td5iky\n' +
+    'nx0zo+qTKG2M/h3Rk6aszysSGC5YS/p3se3XXyfsAiWSqIWlenx5uvdGbvOa/N3p\n' +
+    '9frhxR2wicI41NJGeTpJgsKD04J4burC60aBCBRQiPevA5Y+yzimMV2c5PX6Jvqm\n' +
+    'lLgXkD7Zo7ZuvBInXe14SMO/\n' +
+    '-----END PRIVATE KEY-----\n',
+  client_email: 'firebase-adminsdk-7gyil@token-tracker-1cc4f.iam.gserviceaccount.com',
+  client_id: '106882706145458370886',
+  auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+  token_uri: 'https://oauth2.googleapis.com/token',
+  auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+  client_x509_cert_url: 'https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-7gyil%40token-tracker-1cc4f.iam.gserviceaccount.com'
+}
+
+[debug] [2023-04-24T14:06:49.645Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-04-24T14:06:49.649Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-04-24T14:06:54.899Z] Functions emulator received unknown request at path /health-check
+[debug] [2023-04-24T14:07:24.714Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2023-04-24T14:07:25.717Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-04-24T14:07:28.052Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2023-04-24T14:07:28.052Z] Building nodejs source
+[debug] [2023-04-24T14:07:28.052Z] Analyzing nodejs backend spec
+[debug] [2023-04-24T14:07:28.060Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-04-24T14:07:28.255Z] Serving at port 9005
+
+[debug] [2023-04-24T14:07:28.317Z] Log ~ serviceAccount: {
+  type: 'service_account',
+  project_id: 'token-tracker-1cc4f',
+  private_key_id: '887840916988f05ae13617530e46ca729b5eede2',
+  private_key: '-----BEGIN PRIVATE KEY-----\n' +
+    'MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD1lZMDE9ikC1ua\n' +
+    'UPWUfuGxgLcOtviYSHj+/V2+4o8pe1CEDWlq94dQe6u541KARUHm1elcQLAS68BV\n' +
+    'se4B4WhQz4apqXuUrf2l1AQhxSSiyhfTqsDyXDyTYfzb8wDBfmtx0Xg6YEfptEri\n' +
+    'aM4XDPhuUHlv76pcKoVmN+73J8Hkx1wa+6ainaXuIwXGCOJpAEmPc+UfM+09PoP6\n' +
+    '4EVyZfJzWEqBm4td2vOmG3Gb/ORySByYWVb+6AfbzZspaZ6jHfK2y+dE8oCdBGl6\n' +
+    'BiV2nvlH2ruZaExEyVarlk13qNinaHtRZApjJ52EUodeZBH8oEpN5ALyg8HdZ477\n' +
+    '7sid7fQFAgMBAAECggEABsexCK4M68Up1kIomtzrO4yjgSh+sdWZDDvP0Wv31TFZ\n' +
+    'BmGdvhzvWMLRTuR+a+7S5EiWP2cZyqvvjMNzdWHVEMYUoFfULZqlcg/pvUpFZKkn\n' +
+    'rJRTl11XNB/JwgNyIJAY70oqg5ISP4WBZmwg+cnwjJB0NH7tY8tYu3sNLI2lxhHH\n' +
+    'xKY59kFLjDKTHnXk6lzS4eP+wtDSWCmzO+L+mfJJWwga2Awia0Q4I62scj/Gr0TC\n' +
+    'tbssXM6+6U6ZG97KXa6TbyHfJbSR4GXwVqbvZu9fILHWB8HQlPW9z24+B/5uWTrH\n' +
+    '7O4++UjCA060r0wlglOIWD5CYYtKkoWruGLdhd17UQKBgQD9x2P6XhnoAZ8sFBIN\n' +
+    'GsRKy6MyaRCEcVG717Ao9n8ZePZjsG6O9/wXaMntMYYOmeeLGlxYmQ3lM6M2nLPU\n' +
+    'ZGuvt8sFJIdyaBH0K//WJ60P8FWMdk4CFjft1Q4hEgSBuMzxBGB/8Z9piy2LMzy+\n' +
+    'JJjJPUJpim2c0iEFk1sxtYDyRwKBgQD3u9K6iXo+Ly+esIASNCSdafzAFdf5Kg5C\n' +
+    'KLiIEiGd7qsFi7U4eU4/rF3DDyAcuYRSIUhYw7zvJchUWosG7H/sKdTLK8b85w9o\n' +
+    'A/zGdcrB54N6X03uq7FG51CAyP7wKkARyxphkpWCENAXzjgxKNA6ioJKAxwqQiOB\n' +
+    '8t6XXtnhUwKBgGGSAJlpBpLR1M3QpaQOL3wGUSd3h5c0LlWHNr55DyLPBAQN+GPV\n' +
+    'akHh0wjz6nPArmon52tU5SfDM7QyiV1WgqSbiF3gzoapBoYXSJSgyoP/RhTsA1AA\n' +
+    'FN7G9Fi4oazyTTE5GpT2Y/DjRs5nE6qTTX7Jo7gKNdx+WZ3YKs6w1vPPAoGBANsm\n' +
+    'HTGE4k3WQiL4ciMoW2ehVcS6zhaN3JUsHqnImFJ0yneaclKmBNGQ8lTWsYqXlnVt\n' +
+    'GenkJePMoZ31ht02I6fQDX05mcspv9g9BsSteRL1cbq0SmWjHqzhfbafl97vEURs\n' +
+    'TkcYfAfWRa95bv4V47aVxtIgVC8R2QVgywZPEyEfAoGBAOsTMh2BsJKoS9td5iky\n' +
+    'nx0zo+qTKG2M/h3Rk6aszysSGC5YS/p3se3XXyfsAiWSqIWlenx5uvdGbvOa/N3p\n' +
+    '9frhxR2wicI41NJGeTpJgsKD04J4burC60aBCBRQiPevA5Y+yzimMV2c5PX6Jvqm\n' +
+    'lLgXkD7Zo7ZuvBInXe14SMO/\n' +
+    '-----END PRIVATE KEY-----\n',
+  client_email: 'firebase-adminsdk-7gyil@token-tracker-1cc4f.iam.gserviceaccount.com',
+  client_id: '106882706145458370886',
+  auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+  token_uri: 'https://oauth2.googleapis.com/token',
+  auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+  client_x509_cert_url: 'https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-7gyil%40token-tracker-1cc4f.iam.gserviceaccount.com'
+}
+
+[debug] [2023-04-24T14:07:28.389Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-04-24T14:07:28.393Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-04-24T14:07:30.354Z] Functions emulator received unknown request at path /qwer
+[debug] [2023-04-24T14:07:33.006Z] Functions emulator received unknown request at path /qwer
+[debug] [2023-04-24T14:07:55.508Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2023-04-24T14:07:55.508Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2023-04-24T14:07:55.509Z] Accepted request GET /token-tracker-1cc4f/us-central1/app --> us-central1-app
+[debug] [2023-04-24T14:07:55.512Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-04-24T14:07:55.513Z] [functions] Got req.url=/token-tracker-1cc4f/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/token-tracker-1cc4f/us-central1/app, mapping to path=/"}}
+[debug] [2023-04-24T14:07:55.528Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2023-04-24T14:07:55.528Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2023-04-24T14:07:56.498Z] [runtime-status] [56725] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-04-24T14:07:56.499Z] [runtime-status] [56725] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-04-24T14:07:56.499Z] [runtime-status] [56725] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-04-24T14:07:56.500Z] [runtime-status] [56725] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-04-24T14:07:56.536Z] [runtime-status] [56725] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-04-24T14:07:56.537Z] [runtime-status] [56725] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-04-24T14:07:56.537Z] [runtime-status] [56725] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-04-24T14:07:56.538Z] [runtime-status] [56725] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-04-24T14:07:56.538Z] [runtime-status] [56725] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-04-24T14:07:56.539Z] [runtime-status] [56725] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[info] >  Log ~ serviceAccount: { {"user":"Log ~ serviceAccount: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Log ~ serviceAccount: {"}}
+[info] >    type: 'service_account', {"user":"  type: 'service_account',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   type: 'service_account',"}}
+[info] >    project_id: 'token-tracker-1cc4f', {"user":"  project_id: 'token-tracker-1cc4f',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   project_id: 'token-tracker-1cc4f',"}}
+[info] >    private_key_id: '887840916988f05ae13617530e46ca729b5eede2', {"user":"  private_key_id: '887840916988f05ae13617530e46ca729b5eede2',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   private_key_id: '887840916988f05ae13617530e46ca729b5eede2',"}}
+[info] >    private_key: '-----BEGIN PRIVATE KEY-----\n' + {"user":"  private_key: '-----BEGIN PRIVATE KEY-----\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   private_key: '-----BEGIN PRIVATE KEY-----\\n' +"}}
+[info] >      'MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD1lZMDE9ikC1ua\n' + {"user":"    'MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD1lZMDE9ikC1ua\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD1lZMDE9ikC1ua\\n' +"}}
+[info] >      'UPWUfuGxgLcOtviYSHj+/V2+4o8pe1CEDWlq94dQe6u541KARUHm1elcQLAS68BV\n' + {"user":"    'UPWUfuGxgLcOtviYSHj+/V2+4o8pe1CEDWlq94dQe6u541KARUHm1elcQLAS68BV\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'UPWUfuGxgLcOtviYSHj+/V2+4o8pe1CEDWlq94dQe6u541KARUHm1elcQLAS68BV\\n' +"}}
+[info] >      'se4B4WhQz4apqXuUrf2l1AQhxSSiyhfTqsDyXDyTYfzb8wDBfmtx0Xg6YEfptEri\n' + {"user":"    'se4B4WhQz4apqXuUrf2l1AQhxSSiyhfTqsDyXDyTYfzb8wDBfmtx0Xg6YEfptEri\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'se4B4WhQz4apqXuUrf2l1AQhxSSiyhfTqsDyXDyTYfzb8wDBfmtx0Xg6YEfptEri\\n' +"}}
+[info] >      'aM4XDPhuUHlv76pcKoVmN+73J8Hkx1wa+6ainaXuIwXGCOJpAEmPc+UfM+09PoP6\n' + {"user":"    'aM4XDPhuUHlv76pcKoVmN+73J8Hkx1wa+6ainaXuIwXGCOJpAEmPc+UfM+09PoP6\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'aM4XDPhuUHlv76pcKoVmN+73J8Hkx1wa+6ainaXuIwXGCOJpAEmPc+UfM+09PoP6\\n' +"}}
+[info] >      '4EVyZfJzWEqBm4td2vOmG3Gb/ORySByYWVb+6AfbzZspaZ6jHfK2y+dE8oCdBGl6\n' + {"user":"    '4EVyZfJzWEqBm4td2vOmG3Gb/ORySByYWVb+6AfbzZspaZ6jHfK2y+dE8oCdBGl6\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     '4EVyZfJzWEqBm4td2vOmG3Gb/ORySByYWVb+6AfbzZspaZ6jHfK2y+dE8oCdBGl6\\n' +"}}
+[info] >      'BiV2nvlH2ruZaExEyVarlk13qNinaHtRZApjJ52EUodeZBH8oEpN5ALyg8HdZ477\n' + {"user":"    'BiV2nvlH2ruZaExEyVarlk13qNinaHtRZApjJ52EUodeZBH8oEpN5ALyg8HdZ477\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'BiV2nvlH2ruZaExEyVarlk13qNinaHtRZApjJ52EUodeZBH8oEpN5ALyg8HdZ477\\n' +"}}
+[info] >      '7sid7fQFAgMBAAECggEABsexCK4M68Up1kIomtzrO4yjgSh+sdWZDDvP0Wv31TFZ\n' + {"user":"    '7sid7fQFAgMBAAECggEABsexCK4M68Up1kIomtzrO4yjgSh+sdWZDDvP0Wv31TFZ\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     '7sid7fQFAgMBAAECggEABsexCK4M68Up1kIomtzrO4yjgSh+sdWZDDvP0Wv31TFZ\\n' +"}}
+[info] >      'BmGdvhzvWMLRTuR+a+7S5EiWP2cZyqvvjMNzdWHVEMYUoFfULZqlcg/pvUpFZKkn\n' + {"user":"    'BmGdvhzvWMLRTuR+a+7S5EiWP2cZyqvvjMNzdWHVEMYUoFfULZqlcg/pvUpFZKkn\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'BmGdvhzvWMLRTuR+a+7S5EiWP2cZyqvvjMNzdWHVEMYUoFfULZqlcg/pvUpFZKkn\\n' +"}}
+[info] >      'rJRTl11XNB/JwgNyIJAY70oqg5ISP4WBZmwg+cnwjJB0NH7tY8tYu3sNLI2lxhHH\n' + {"user":"    'rJRTl11XNB/JwgNyIJAY70oqg5ISP4WBZmwg+cnwjJB0NH7tY8tYu3sNLI2lxhHH\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'rJRTl11XNB/JwgNyIJAY70oqg5ISP4WBZmwg+cnwjJB0NH7tY8tYu3sNLI2lxhHH\\n' +"}}
+[info] >      'xKY59kFLjDKTHnXk6lzS4eP+wtDSWCmzO+L+mfJJWwga2Awia0Q4I62scj/Gr0TC\n' + {"user":"    'xKY59kFLjDKTHnXk6lzS4eP+wtDSWCmzO+L+mfJJWwga2Awia0Q4I62scj/Gr0TC\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'xKY59kFLjDKTHnXk6lzS4eP+wtDSWCmzO+L+mfJJWwga2Awia0Q4I62scj/Gr0TC\\n' +"}}
+[info] >      'tbssXM6+6U6ZG97KXa6TbyHfJbSR4GXwVqbvZu9fILHWB8HQlPW9z24+B/5uWTrH\n' + {"user":"    'tbssXM6+6U6ZG97KXa6TbyHfJbSR4GXwVqbvZu9fILHWB8HQlPW9z24+B/5uWTrH\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'tbssXM6+6U6ZG97KXa6TbyHfJbSR4GXwVqbvZu9fILHWB8HQlPW9z24+B/5uWTrH\\n' +"}}
+[info] >      '7O4++UjCA060r0wlglOIWD5CYYtKkoWruGLdhd17UQKBgQD9x2P6XhnoAZ8sFBIN\n' + {"user":"    '7O4++UjCA060r0wlglOIWD5CYYtKkoWruGLdhd17UQKBgQD9x2P6XhnoAZ8sFBIN\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     '7O4++UjCA060r0wlglOIWD5CYYtKkoWruGLdhd17UQKBgQD9x2P6XhnoAZ8sFBIN\\n' +"}}
+[info] >      'GsRKy6MyaRCEcVG717Ao9n8ZePZjsG6O9/wXaMntMYYOmeeLGlxYmQ3lM6M2nLPU\n' + {"user":"    'GsRKy6MyaRCEcVG717Ao9n8ZePZjsG6O9/wXaMntMYYOmeeLGlxYmQ3lM6M2nLPU\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'GsRKy6MyaRCEcVG717Ao9n8ZePZjsG6O9/wXaMntMYYOmeeLGlxYmQ3lM6M2nLPU\\n' +"}}
+[info] >      'ZGuvt8sFJIdyaBH0K//WJ60P8FWMdk4CFjft1Q4hEgSBuMzxBGB/8Z9piy2LMzy+\n' + {"user":"    'ZGuvt8sFJIdyaBH0K//WJ60P8FWMdk4CFjft1Q4hEgSBuMzxBGB/8Z9piy2LMzy+\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'ZGuvt8sFJIdyaBH0K//WJ60P8FWMdk4CFjft1Q4hEgSBuMzxBGB/8Z9piy2LMzy+\\n' +"}}
+[info] >      'JJjJPUJpim2c0iEFk1sxtYDyRwKBgQD3u9K6iXo+Ly+esIASNCSdafzAFdf5Kg5C\n' + {"user":"    'JJjJPUJpim2c0iEFk1sxtYDyRwKBgQD3u9K6iXo+Ly+esIASNCSdafzAFdf5Kg5C\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'JJjJPUJpim2c0iEFk1sxtYDyRwKBgQD3u9K6iXo+Ly+esIASNCSdafzAFdf5Kg5C\\n' +"}}
+[info] >      'KLiIEiGd7qsFi7U4eU4/rF3DDyAcuYRSIUhYw7zvJchUWosG7H/sKdTLK8b85w9o\n' + {"user":"    'KLiIEiGd7qsFi7U4eU4/rF3DDyAcuYRSIUhYw7zvJchUWosG7H/sKdTLK8b85w9o\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'KLiIEiGd7qsFi7U4eU4/rF3DDyAcuYRSIUhYw7zvJchUWosG7H/sKdTLK8b85w9o\\n' +"}}
+[info] >      'A/zGdcrB54N6X03uq7FG51CAyP7wKkARyxphkpWCENAXzjgxKNA6ioJKAxwqQiOB\n' + {"user":"    'A/zGdcrB54N6X03uq7FG51CAyP7wKkARyxphkpWCENAXzjgxKNA6ioJKAxwqQiOB\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'A/zGdcrB54N6X03uq7FG51CAyP7wKkARyxphkpWCENAXzjgxKNA6ioJKAxwqQiOB\\n' +"}}
+[info] >      '8t6XXtnhUwKBgGGSAJlpBpLR1M3QpaQOL3wGUSd3h5c0LlWHNr55DyLPBAQN+GPV\n' + {"user":"    '8t6XXtnhUwKBgGGSAJlpBpLR1M3QpaQOL3wGUSd3h5c0LlWHNr55DyLPBAQN+GPV\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     '8t6XXtnhUwKBgGGSAJlpBpLR1M3QpaQOL3wGUSd3h5c0LlWHNr55DyLPBAQN+GPV\\n' +"}}
+[info] >      'akHh0wjz6nPArmon52tU5SfDM7QyiV1WgqSbiF3gzoapBoYXSJSgyoP/RhTsA1AA\n' + {"user":"    'akHh0wjz6nPArmon52tU5SfDM7QyiV1WgqSbiF3gzoapBoYXSJSgyoP/RhTsA1AA\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'akHh0wjz6nPArmon52tU5SfDM7QyiV1WgqSbiF3gzoapBoYXSJSgyoP/RhTsA1AA\\n' +"}}
+[info] >      'FN7G9Fi4oazyTTE5GpT2Y/DjRs5nE6qTTX7Jo7gKNdx+WZ3YKs6w1vPPAoGBANsm\n' + {"user":"    'FN7G9Fi4oazyTTE5GpT2Y/DjRs5nE6qTTX7Jo7gKNdx+WZ3YKs6w1vPPAoGBANsm\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'FN7G9Fi4oazyTTE5GpT2Y/DjRs5nE6qTTX7Jo7gKNdx+WZ3YKs6w1vPPAoGBANsm\\n' +"}}
+[info] >      'HTGE4k3WQiL4ciMoW2ehVcS6zhaN3JUsHqnImFJ0yneaclKmBNGQ8lTWsYqXlnVt\n' + {"user":"    'HTGE4k3WQiL4ciMoW2ehVcS6zhaN3JUsHqnImFJ0yneaclKmBNGQ8lTWsYqXlnVt\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'HTGE4k3WQiL4ciMoW2ehVcS6zhaN3JUsHqnImFJ0yneaclKmBNGQ8lTWsYqXlnVt\\n' +"}}
+[info] >      'GenkJePMoZ31ht02I6fQDX05mcspv9g9BsSteRL1cbq0SmWjHqzhfbafl97vEURs\n' + {"user":"    'GenkJePMoZ31ht02I6fQDX05mcspv9g9BsSteRL1cbq0SmWjHqzhfbafl97vEURs\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'GenkJePMoZ31ht02I6fQDX05mcspv9g9BsSteRL1cbq0SmWjHqzhfbafl97vEURs\\n' +"}}
+[info] >      'TkcYfAfWRa95bv4V47aVxtIgVC8R2QVgywZPEyEfAoGBAOsTMh2BsJKoS9td5iky\n' + {"user":"    'TkcYfAfWRa95bv4V47aVxtIgVC8R2QVgywZPEyEfAoGBAOsTMh2BsJKoS9td5iky\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'TkcYfAfWRa95bv4V47aVxtIgVC8R2QVgywZPEyEfAoGBAOsTMh2BsJKoS9td5iky\\n' +"}}
+[info] >      'nx0zo+qTKG2M/h3Rk6aszysSGC5YS/p3se3XXyfsAiWSqIWlenx5uvdGbvOa/N3p\n' + {"user":"    'nx0zo+qTKG2M/h3Rk6aszysSGC5YS/p3se3XXyfsAiWSqIWlenx5uvdGbvOa/N3p\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'nx0zo+qTKG2M/h3Rk6aszysSGC5YS/p3se3XXyfsAiWSqIWlenx5uvdGbvOa/N3p\\n' +"}}
+[info] >      '9frhxR2wicI41NJGeTpJgsKD04J4burC60aBCBRQiPevA5Y+yzimMV2c5PX6Jvqm\n' + {"user":"    '9frhxR2wicI41NJGeTpJgsKD04J4burC60aBCBRQiPevA5Y+yzimMV2c5PX6Jvqm\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     '9frhxR2wicI41NJGeTpJgsKD04J4burC60aBCBRQiPevA5Y+yzimMV2c5PX6Jvqm\\n' +"}}
+[info] >      'lLgXkD7Zo7ZuvBInXe14SMO/\n' + {"user":"    'lLgXkD7Zo7ZuvBInXe14SMO/\\n' +","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     'lLgXkD7Zo7ZuvBInXe14SMO/\\n' +"}}
+[info] >      '-----END PRIVATE KEY-----\n', {"user":"    '-----END PRIVATE KEY-----\\n',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     '-----END PRIVATE KEY-----\\n',"}}
+[info] >    client_email: 'firebase-adminsdk-7gyil@token-tracker-1cc4f.iam.gserviceaccount.com', {"user":"  client_email: 'firebase-adminsdk-7gyil@token-tracker-1cc4f.iam.gserviceaccount.com',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   client_email: 'firebase-adminsdk-7gyil@token-tracker-1cc4f.iam.gserviceaccount.com',"}}
+[info] >    client_id: '106882706145458370886', {"user":"  client_id: '106882706145458370886',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   client_id: '106882706145458370886',"}}
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth', {"user":"  auth_uri: 'https://accounts.google.com/o/oauth2/auth',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   auth_uri: 'https://accounts.google.com/o/oauth2/auth',"}}
+[info] >    token_uri: 'https://oauth2.googleapis.com/token', {"user":"  token_uri: 'https://oauth2.googleapis.com/token',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   token_uri: 'https://oauth2.googleapis.com/token',"}}
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs', {"user":"  auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',"}}
+[info] >    client_x509_cert_url: 'https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-7gyil%40token-tracker-1cc4f.iam.gserviceaccount.com' {"user":"  client_x509_cert_url: 'https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-7gyil%40token-tracker-1cc4f.iam.gserviceaccount.com'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   client_x509_cert_url: 'https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-7gyil%40token-tracker-1cc4f.iam.gserviceaccount.com'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2023-04-24T14:07:56.746Z] [runtime-status] [56725] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"token-tracker-1cc4f","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD1lZMDE9ikC1ua\nUPWUfuGxgLcOtviYSHj+/V2+4o8pe1CEDWlq94dQe6u541KARUHm1elcQLAS68BV\nse4B4WhQz4apqXuUrf2l1AQhxSSiyhfTqsDyXDyTYfzb8wDBfmtx0Xg6YEfptEri\naM4XDPhuUHlv76pcKoVmN+73J8Hkx1wa+6ainaXuIwXGCOJpAEmPc+UfM+09PoP6\n4EVyZfJzWEqBm4td2vOmG3Gb/ORySByYWVb+6AfbzZspaZ6jHfK2y+dE8oCdBGl6\nBiV2nvlH2ruZaExEyVarlk13qNinaHtRZApjJ52EUodeZBH8oEpN5ALyg8HdZ477\n7sid7fQFAgMBAAECggEABsexCK4M68Up1kIomtzrO4yjgSh+sdWZDDvP0Wv31TFZ\nBmGdvhzvWMLRTuR+a+7S5EiWP2cZyqvvjMNzdWHVEMYUoFfULZqlcg/pvUpFZKkn\nrJRTl11XNB/JwgNyIJAY70oqg5ISP4WBZmwg+cnwjJB0NH7tY8tYu3sNLI2lxhHH\nxKY59kFLjDKTHnXk6lzS4eP+wtDSWCmzO+L+mfJJWwga2Awia0Q4I62scj/Gr0TC\ntbssXM6+6U6ZG97KXa6TbyHfJbSR4GXwVqbvZu9fILHWB8HQlPW9z24+B/5uWTrH\n7O4++UjCA060r0wlglOIWD5CYYtKkoWruGLdhd17UQKBgQD9x2P6XhnoAZ8sFBIN\nGsRKy6MyaRCEcVG717Ao9n8ZePZjsG6O9/wXaMntMYYOmeeLGlxYmQ3lM6M2nLPU\nZGuvt8sFJIdyaBH0K//WJ60P8FWMdk4CFjft1Q4hEgSBuMzxBGB/8Z9piy2LMzy+\nJJjJPUJpim2c0iEFk1sxtYDyRwKBgQD3u9K6iXo+Ly+esIASNCSdafzAFdf5Kg5C\nKLiIEiGd7qsFi7U4eU4/rF3DDyAcuYRSIUhYw7zvJchUWosG7H/sKdTLK8b85w9o\nA/zGdcrB54N6X03uq7FG51CAyP7wKkARyxphkpWCENAXzjgxKNA6ioJKAxwqQiOB\n8t6XXtnhUwKBgGGSAJlpBpLR1M3QpaQOL3wGUSd3h5c0LlWHNr55DyLPBAQN+GPV\nakHh0wjz6nPArmon52tU5SfDM7QyiV1WgqSbiF3gzoapBoYXSJSgyoP/RhTsA1AA\nFN7G9Fi4oazyTTE5GpT2Y/DjRs5nE6qTTX7Jo7gKNdx+WZ3YKs6w1vPPAoGBANsm\nHTGE4k3WQiL4ciMoW2ehVcS6zhaN3JUsHqnImFJ0yneaclKmBNGQ8lTWsYqXlnVt\nGenkJePMoZ31ht02I6fQDX05mcspv9g9BsSteRL1cbq0SmWjHqzhfbafl97vEURs\nTkcYfAfWRa95bv4V47aVxtIgVC8R2QVgywZPEyEfAoGBAOsTMh2BsJKoS9td5iky\nnx0zo+qTKG2M/h3Rk6aszysSGC5YS/p3se3XXyfsAiWSqIWlenx5uvdGbvOa/N3p\n9frhxR2wicI41NJGeTpJgsKD04J4burC60aBCBRQiPevA5Y+yzimMV2c5PX6Jvqm\nlLgXkD7Zo7ZuvBInXe14SMO/\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-7gyil@token-tracker-1cc4f.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}},"databaseURL":"https://token-tracker-1cc4f.firebaseio.com"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"token-tracker-1cc4f\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD1lZMDE9ikC1ua\\nUPWUfuGxgLcOtviYSHj+/V2+4o8pe1CEDWlq94dQe6u541KARUHm1elcQLAS68BV\\nse4B4WhQz4apqXuUrf2l1AQhxSSiyhfTqsDyXDyTYfzb8wDBfmtx0Xg6YEfptEri\\naM4XDPhuUHlv76pcKoVmN+73J8Hkx1wa+6ainaXuIwXGCOJpAEmPc+UfM+09PoP6\\n4EVyZfJzWEqBm4td2vOmG3Gb/ORySByYWVb+6AfbzZspaZ6jHfK2y+dE8oCdBGl6\\nBiV2nvlH2ruZaExEyVarlk13qNinaHtRZApjJ52EUodeZBH8oEpN5ALyg8HdZ477\\n7sid7fQFAgMBAAECggEABsexCK4M68Up1kIomtzrO4yjgSh+sdWZDDvP0Wv31TFZ\\nBmGdvhzvWMLRTuR+a+7S5EiWP2cZyqvvjMNzdWHVEMYUoFfULZqlcg/pvUpFZKkn\\nrJRTl11XNB/JwgNyIJAY70oqg5ISP4WBZmwg+cnwjJB0NH7tY8tYu3sNLI2lxhHH\\nxKY59kFLjDKTHnXk6lzS4eP+wtDSWCmzO+L+mfJJWwga2Awia0Q4I62scj/Gr0TC\\ntbssXM6+6U6ZG97KXa6TbyHfJbSR4GXwVqbvZu9fILHWB8HQlPW9z24+B/5uWTrH\\n7O4++UjCA060r0wlglOIWD5CYYtKkoWruGLdhd17UQKBgQD9x2P6XhnoAZ8sFBIN\\nGsRKy6MyaRCEcVG717Ao9n8ZePZjsG6O9/wXaMntMYYOmeeLGlxYmQ3lM6M2nLPU\\nZGuvt8sFJIdyaBH0K//WJ60P8FWMdk4CFjft1Q4hEgSBuMzxBGB/8Z9piy2LMzy+\\nJJjJPUJpim2c0iEFk1sxtYDyRwKBgQD3u9K6iXo+Ly+esIASNCSdafzAFdf5Kg5C\\nKLiIEiGd7qsFi7U4eU4/rF3DDyAcuYRSIUhYw7zvJchUWosG7H/sKdTLK8b85w9o\\nA/zGdcrB54N6X03uq7FG51CAyP7wKkARyxphkpWCENAXzjgxKNA6ioJKAxwqQiOB\\n8t6XXtnhUwKBgGGSAJlpBpLR1M3QpaQOL3wGUSd3h5c0LlWHNr55DyLPBAQN+GPV\\nakHh0wjz6nPArmon52tU5SfDM7QyiV1WgqSbiF3gzoapBoYXSJSgyoP/RhTsA1AA\\nFN7G9Fi4oazyTTE5GpT2Y/DjRs5nE6qTTX7Jo7gKNdx+WZ3YKs6w1vPPAoGBANsm\\nHTGE4k3WQiL4ciMoW2ehVcS6zhaN3JUsHqnImFJ0yneaclKmBNGQ8lTWsYqXlnVt\\nGenkJePMoZ31ht02I6fQDX05mcspv9g9BsSteRL1cbq0SmWjHqzhfbafl97vEURs\\nTkcYfAfWRa95bv4V47aVxtIgVC8R2QVgywZPEyEfAoGBAOsTMh2BsJKoS9td5iky\\nnx0zo+qTKG2M/h3Rk6aszysSGC5YS/p3se3XXyfsAiWSqIWlenx5uvdGbvOa/N3p\\n9frhxR2wicI41NJGeTpJgsKD04J4burC60aBCBRQiPevA5Y+yzimMV2c5PX6Jvqm\\nlLgXkD7Zo7ZuvBInXe14SMO/\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-7gyil@token-tracker-1cc4f.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}},\"databaseURL\":\"https://token-tracker-1cc4f.firebaseio.com\"}"}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2023-04-24T14:07:56.778Z] [runtime-status] [56725] Functions runtime initialized. {"cwd":"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions","node_version":"16.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] Functions runtime initialized. {\"cwd\":\"/Users/phongvu/Desktop/jumplab/Mochi-raycast/functions\",\"node_version\":\"16.10.0\"}"}}
+[debug] [2023-04-24T14:07:56.779Z] [runtime-status] [56725] Listening to port: /var/folders/kj/6qyqtwbx3vd_6f1bnd5vkdb80000gn/T/fire_emu_e25b6251657d2094.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [56725] Listening to port: /var/folders/kj/6qyqtwbx3vd_6f1bnd5vkdb80000gn/T/fire_emu_e25b6251657d2094.sock"}}
+[debug] [2023-04-24T14:07:56.866Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2023-04-24T14:07:56.866Z] [worker-us-central1-app-8300f94c-d16e-4467-a887-7b1b4f1654f9]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-8300f94c-d16e-4467-a887-7b1b4f1654f9]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2023-04-24T14:07:56.875Z] [worker-us-central1-app-8300f94c-d16e-4467-a887-7b1b4f1654f9]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-8300f94c-d16e-4467-a887-7b1b4f1654f9]: IDLE"}}
+[debug] [2023-04-24T14:07:56.875Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 3.06825ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 3.06825ms"}}
