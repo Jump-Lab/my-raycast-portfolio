@@ -21,6 +21,12 @@
       "title": "portfolio",
       "description": "",
       "mode": "view"
+    },
+    {
+      "name": "convert",
+      "title": "convert token",
+      "description": "",
+      "mode": "view"
     }
   ],
   "dependencies": {

@@ -4,6 +4,8 @@ import { useCallback, useEffect, useState } from "react";
 import PortfolioInput from "./components/PortfolioInput";
 import TokenDetail from "./components/TokenDetail";
 import { IToken, ITokenCoingecko } from "./type/token";
+import { getTokens } from "./util/api";
+import { IsTextIncludes } from "./util/string";
 
 export default function Command() {
   const { push } = useNavigation();
@@ -16,20 +18,12 @@ export default function Command() {
   const [filteredList, filterList] = useState<IToken[]>([]);
 
   useEffect(() => {
-    filterList(tokens.filter((token) => token.name.includes(searchTokenText)));
+    filterList(
+      tokens.filter(
+        (token) => IsTextIncludes(token.name, searchTokenText) || IsTextIncludes(token.symbol, searchTokenText)
+      )
+    );
   }, [searchTokenText, tokens]);
-
-  const getTokens = async () => {
-    const res = await axios.get("https://api.mochi.pod.town/api/v1/defi/tokens");
-    return res.data;
-  };
-
-  const getTokenInformation = async (tokenId: string) => {
-    setIsLoading(true);
-
-    const req = await axios.get(`https://api.mochi.pod.town/api/v1/defi/coins/${tokenId}`);
-    return req.data;
-  };
 
   const addTokenToFavorite = async (coingecko_id: string) => {
     const favorite = await LocalStorage.getItem("favoritesCoin");
