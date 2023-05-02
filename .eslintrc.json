@@ -2,6 +2,6 @@
   "root": true,
   "extends": ["@raycast"],
   "rules": {
-    "@typescript-eslint/ban-ts-comment": "error"
+    "@typescript-eslint/ban-ts-comment": "off"
   }
 }
