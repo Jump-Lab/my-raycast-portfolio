@@ -38,6 +38,9 @@ This software uses the following open source packages:
 
 - [Axios](https://axios-http.com/)
 
+## Members
+- kohana11
+    - Email: khoanguyen96.dev@gmail.com
 
 ## License
 
