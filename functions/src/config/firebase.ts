@@ -1,6 +1,5 @@
 import * as admin from "firebase-admin";
 import serviceAccount from "./serviceAccount.json";
-console.log("Log ~ serviceAccount:", serviceAccount)
 
 admin.initializeApp({
   //@ts-ignore

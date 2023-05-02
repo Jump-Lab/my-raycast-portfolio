@@ -11,9 +11,11 @@ router.get('/health-check', (req, res) => {
 router.get('/portfolio',async (req, res) => {
   try {
     //@ts-ignore
-    const portfolio = await getPortfolio(req.user.uid)
+    const portfolio = await getPortfolio(req.user.sub)
+    console.log("Log ~ router.get ~ portfolio:", portfolio)
     res.status(200).send(portfolio);
   } catch (e) {
+    console.log("Log ~ router.get ~ e:", e)
     res.status(500);
   }
 })

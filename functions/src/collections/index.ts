@@ -5,7 +5,8 @@ export enum COLLECTIONS {
 }
 
 export const getPortfolio = async (userId: string) => {
-  return admin.firestore().collection(COLLECTIONS.PORTFOLIO_ITEM).where("userId", "in", userId).get();
+  const data = await admin.firestore().collection(COLLECTIONS.PORTFOLIO_ITEM).where("userId", "==", userId).get();
+  return data.docs.map(item => item.data());
 };
 
 export const addPortfolioItem = async (item: any) => {
