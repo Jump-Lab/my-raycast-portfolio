@@ -12,6 +12,13 @@ export interface IToken {
   is_favorite?: boolean;
 }
 
+export interface IQueryToken {
+  id: string;
+  symbol: string;
+  name: string;
+  is_favorite?: boolean;
+}
+
 type CoinTicker = {
   base: string;
   target: string;
