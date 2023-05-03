@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "mochi",
-  "title": "Mochi",
+  "title": "My Portfolio",
   "description": "",
   "icon": "command-icon.png",
   "author": "koha",
@@ -12,25 +12,13 @@
   "commands": [
     {
       "name": "token",
-      "title": "token",
+      "title": "Search Token",
       "description": "",
       "mode": "view"
     },
     {
       "name": "portfolio",
-      "title": "portfolio",
-      "description": "",
-      "mode": "view"
-    },
-    {
-      "name": "oauth",
-      "title": "oauth",
-      "description": "",
-      "mode": "view"
-    },
-    {
-      "name": "convert",
-      "title": "convert token",
+      "title": "Portfolio",
       "description": "",
       "mode": "view"
     }
