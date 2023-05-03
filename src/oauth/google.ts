@@ -24,17 +24,13 @@ export async function authorize(): Promise<string | undefined> {
     return tokenSet.idToken;
   }
 
-  console.log("Log ~ authorize ~ tokenSet:", tokenSet)
   const authRequest = await client.authorizationRequest({
     endpoint: "https://accounts.google.com/o/oauth2/v2/auth",
     clientId: CLIENT_ID,
     scope: "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile",
   });
-  console.log("Log ~ authorize ~ authRequest:", authRequest)
   const { authorizationCode } = await client.authorize(authRequest);
-  console.log("Log ~ authorize ~ authorizationCode:", authorizationCode)
   const tokens = await fetchTokens(authRequest, authorizationCode);
-  console.log("Log ~ authorize ~ tokens:", tokens)
   await client.setTokens(tokens);
   return tokens.id_token;
 }
