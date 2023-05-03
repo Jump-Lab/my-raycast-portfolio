@@ -29,20 +29,6 @@ const Portfolio = () => {
     })();
   }, []);
 
-  // oauth
-  useEffect(() => {
-    (async () => {
-      try {
-        await google.authorize();
-        setIsLoading(false);
-      } catch (error) {
-        console.error(error);
-        setIsLoading(false);
-        showToast({ style: Toast.Style.Failure, title: String(error) });
-      }
-    })();
-  }, []);
-
   if (isLoading) {
     return <Detail isLoading={isLoading} />;
   }
