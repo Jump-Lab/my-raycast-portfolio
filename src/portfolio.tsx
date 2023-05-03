@@ -23,8 +23,10 @@ const Portfolio = () => {
         const {portfolio} = test
         setPortfolio(portfolio);
         await LocalStorage.setItem(LOCALSTORAGE_PORTFOLIO, JSON.stringify(portfolio));
+        setIsLoading(false)
       } catch(e) {
         console.error(e);
+        setIsLoading(false)
       }
     })();
   }, []);

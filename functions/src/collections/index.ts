@@ -1,5 +1,4 @@
-import { doc, setDoc } from "firebase/firestore";
-import { admin, db } from "../config/firebase";
+import { admin } from "../config/firebase";
 
 export enum COLLECTIONS {
   PORTFOLIO_ITEM = "PortfolioItem",
@@ -17,7 +16,7 @@ export const addPortfolioItem = async (user: any, portfolio: any) => {
     portfolio,
     lastUpdated: admin.firestore.Timestamp.now(),
   };
-  const data = await admin.firestore().collection(COLLECTIONS.PORTFOLIO_ITEM).where("userId", "==", userId).get();
+  const data = await admin.firestore().collection(COLLECTIONS.PORTFOLIO_ITEM).where("userId", "==", user.sub).get();
   const docs = data.docs;
   if (docs.length) {
     const docId = docs[0].id;

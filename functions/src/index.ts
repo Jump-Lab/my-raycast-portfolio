@@ -13,27 +13,22 @@ const app = express();
 const authenticate = async (req: express.Request, res: express.Response, next: express.NextFunction) => {
   const idToken = req.query.id_token as string;
   if (!idToken) {
-    res.status(403).send("Unauthorized");
-    return;
+    console.error("No id_token");
+    return res.status(403).send("Unauthorized");
   }
   try {
-    const user = await verify(idToken)
+    const user = await verify(idToken);
+    console.log("User ID:", user?.sub);
     //@ts-ignore
     req.user = user;
-    next();
-    return;
+    return next();
   } catch (e) {
-    res.status(403).send("Unauthorized");
-    return;
+    return res.status(403).send("Unauthorized");
   }
 };
 
 app.use(authenticate);
 
 app.use("/", router);
-
-app.use("/qwer", (req, res) => {
-  res.send("alo");
-});
 
 exports.app = functions.https.onRequest(app);

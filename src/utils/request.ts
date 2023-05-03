@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig } from "axios";
 import { authorize } from "../oauth/google";
 
-const baseURL = "http://127.0.0.1:5001/token-tracker-1cc4f/us-central1/app";
+const baseURL = "https://us-central1-token-tracker-1cc4f.cloudfunctions.net/app";
 export const request = async (url: string, method = "GET", data?: any, headers?: any) => {
   const idToken = await authorize();
 

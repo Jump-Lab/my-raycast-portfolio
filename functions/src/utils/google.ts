@@ -15,6 +15,6 @@ export async function verify(token: string) {
     return user
   } catch (e) {
     console.error(e);
-    return;
+    throw new Error("Unauthorized")
   }
 }
