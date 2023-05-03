@@ -1,7 +1,7 @@
 import { Form } from "@raycast/api";
 import { useEffect, useState } from "react";
 import { IToken } from "../type/token";
-import { getTokenDetail } from "../util/api";
+import { getTokenDetail } from "../utils/mochiApi";
 
 type Props = {
   target: IToken;

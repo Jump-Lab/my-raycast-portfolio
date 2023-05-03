@@ -4,8 +4,8 @@ import { useCallback, useEffect, useState } from "react";
 import PortfolioInput from "./components/PortfolioInput";
 import TokenDetail from "./components/TokenDetail";
 import { IToken, ITokenCoingecko } from "./type/token";
-import { getTokens } from "./util/api";
-import { IsTextIncludes } from "./util/string";
+import { getTokens } from "./utils/mochiApi";
+import { isTextIncludes } from "./utils/string";
 
 export default function Command() {
   const { push } = useNavigation();
@@ -20,7 +20,7 @@ export default function Command() {
   useEffect(() => {
     filterList(
       tokens.filter(
-        (token) => IsTextIncludes(token.name, searchTokenText) || IsTextIncludes(token.symbol, searchTokenText)
+        (token) => isTextIncludes(token.name, searchTokenText) || isTextIncludes(token.symbol, searchTokenText)
       )
     );
   }, [searchTokenText, tokens]);
@@ -84,24 +84,24 @@ export default function Command() {
           actions={
             <ActionPanel>
               <Action
-                title="Check Detail"
+                title="View Detail"
                 onAction={async () => {
                   const req = await axios.get(`https://api.mochi.pod.town/api/v1/defi/coins/${item.coin_gecko_id}`);
                   push(<TokenDetail data={req.data.data} />);
                 }}
               />
               <Action
-                title="Enter Portfolio"
+                title="Add to My Portfolio"
                 onAction={() => {
                   push(
                     <PortfolioInput tokenName={item.name} tokenSymbol={item.symbol} coingeckoId={item.coin_gecko_id} />
                   );
                 }}
               />
-              <Action.OpenInBrowser
+              {/* <Action.OpenInBrowser
                 title="Check on Coingecko"
                 url={`https://www.coingecko.com/en/coins/${item.coin_gecko_id}`}
-              />
+              /> */}
               {item.is_favorite ? (
                 <Action title="Remove Favorite" onAction={async () => removeTokenFromFavorite(item.coin_gecko_id)} />
               ) : (
