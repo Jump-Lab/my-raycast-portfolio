@@ -4,8 +4,8 @@ import { useCallback, useEffect, useState } from "react";
 import PortfolioInput from "./components/PortfolioInput";
 import TokenDetail from "./components/TokenDetail";
 import { IToken, ITokenCoingecko } from "./type/token";
-import { getTokens } from "./util/api";
-import { IsTextIncludes } from "./util/string";
+import { getTokens } from "./utils/mochiApi";
+import { isTextIncludes } from "./utils/string";
 
 export default function Command() {
   const { push } = useNavigation();
@@ -20,7 +20,7 @@ export default function Command() {
   useEffect(() => {
     filterList(
       tokens.filter(
-        (token) => IsTextIncludes(token.name, searchTokenText) || IsTextIncludes(token.symbol, searchTokenText)
+        (token) => isTextIncludes(token.name, searchTokenText) || isTextIncludes(token.symbol, searchTokenText)
       )
     );
   }, [searchTokenText, tokens]);

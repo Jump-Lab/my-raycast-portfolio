@@ -2,7 +2,7 @@ import { Action, ActionPanel, Form, useNavigation } from "@raycast/api";
 import { useCallback, useEffect, useState } from "react";
 import ConvertInput from "./components/ConvertInput";
 import { IToken } from "./type/token";
-import { getTokens } from "./util/api";
+import { getTokens } from "./utils/mochiApi";
 
 const Convert = () => {
   const { push } = useNavigation();
