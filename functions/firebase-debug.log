@@ -744,3 +744,153 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2023-05-03T09:19:44.795Z] [worker-us-central1-app-d39c4cfd-44ac-4277-a198-4e99ffbd6b30]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-d39c4cfd-44ac-4277-a198-4e99ffbd6b30]: IDLE"}}
 [debug] [2023-05-03T09:19:44.796Z] [work-queue] {"queueLength":0,"workRunningCount":0}
 [info] i  functions: Finished "app" in 476.588458ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 476.588458ms"}}
+[debug] [2023-05-03T09:34:58.759Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/src/collections/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/src/collections/index.ts changed, reloading triggers"}}
+[debug] [2023-05-03T09:34:59.013Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/collections/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/collections/index.js.map changed, reloading triggers"}}
+[debug] [2023-05-03T09:34:59.014Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/collections/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/collections/index.js changed, reloading triggers"}}
+[debug] [2023-05-03T09:35:00.032Z] Validating nodejs source
+[debug] [2023-05-03T09:35:02.971Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "express": "^4.18.2",
+    "firebase": "^9.21.0",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.3.1",
+    "google-auth-library": "^8.8.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2023-05-03T09:35:02.971Z] Building nodejs source
+[debug] [2023-05-03T09:35:02.972Z] Analyzing nodejs backend spec
+[debug] [2023-05-03T09:35:02.973Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-03T09:35:03.165Z] Serving at port 9005
+
+[debug] [2023-05-03T09:35:03.500Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-05-03T09:35:03.502Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-05-03T09:35:03.512Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2023-05-03T09:35:03.512Z] [worker-us-central1-app-d39c4cfd-44ac-4277-a198-4e99ffbd6b30]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-d39c4cfd-44ac-4277-a198-4e99ffbd6b30]: FINISHING"}}
+[debug] [2023-05-03T09:35:03.525Z] [worker-us-central1-app-d39c4cfd-44ac-4277-a198-4e99ffbd6b30]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-d39c4cfd-44ac-4277-a198-4e99ffbd6b30]: exited"}}
+[debug] [2023-05-03T09:35:03.525Z] [worker-us-central1-app-d39c4cfd-44ac-4277-a198-4e99ffbd6b30]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-d39c4cfd-44ac-4277-a198-4e99ffbd6b30]: FINISHED"}}
+[debug] [2023-05-03T09:36:01.930Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/src/api/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/src/api/index.ts changed, reloading triggers"}}
+[debug] [2023-05-03T09:36:02.341Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/api/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/api/index.js.map changed, reloading triggers"}}
+[debug] [2023-05-03T09:36:02.341Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/api/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/api/index.js changed, reloading triggers"}}
+[debug] [2023-05-03T09:36:03.343Z] Validating nodejs source
+[debug] [2023-05-03T09:36:05.578Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "express": "^4.18.2",
+    "firebase": "^9.21.0",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.3.1",
+    "google-auth-library": "^8.8.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2023-05-03T09:36:05.578Z] Building nodejs source
+[debug] [2023-05-03T09:36:05.578Z] Analyzing nodejs backend spec
+[debug] [2023-05-03T09:36:05.579Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-03T09:36:05.764Z] Serving at port 9005
+
+[debug] [2023-05-03T09:36:06.077Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-05-03T09:36:06.083Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-05-03T09:36:29.062Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/src/collections/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/src/collections/index.ts changed, reloading triggers"}}
+[debug] [2023-05-03T09:36:29.458Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/collections/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/collections/index.js.map changed, reloading triggers"}}
+[debug] [2023-05-03T09:36:29.459Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/collections/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/collections/index.js changed, reloading triggers"}}
+[debug] [2023-05-03T09:36:29.459Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/api/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/api/index.js.map changed, reloading triggers"}}
+[debug] [2023-05-03T09:36:29.459Z] File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/api/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/phongvu/Desktop/jumplab/Mochi-raycast/functions/lib/api/index.js changed, reloading triggers"}}
+[debug] [2023-05-03T09:36:30.464Z] Validating nodejs source
+[debug] [2023-05-03T09:36:32.702Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "express": "^4.18.2",
+    "firebase": "^9.21.0",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.3.1",
+    "google-auth-library": "^8.8.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2023-05-03T09:36:32.702Z] Building nodejs source
+[debug] [2023-05-03T09:36:32.702Z] Analyzing nodejs backend spec
+[debug] [2023-05-03T09:36:32.703Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-03T09:36:32.881Z] Serving at port 9005
+
+[debug] [2023-05-03T09:36:33.158Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-05-03T09:36:33.164Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
