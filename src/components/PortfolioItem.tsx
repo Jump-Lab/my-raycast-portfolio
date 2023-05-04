@@ -3,8 +3,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { ITokenCoingecko, ITokenPortfolio } from "../type/token";
 
-const PortfolioItem = (props: ITokenPortfolio) => {
-  const { coingeckoId, amount, tokenName, symbol } = props;
+const PortfolioItem = (
+  props: ITokenPortfolio & {
+    handleSetAmount: (val: number) => void;
+  }
+) => {
+  const { coingeckoId, amount, tokenName, symbol, handleSetAmount } = props;
   const [tokenDetail, setTokenDetail] = useState<ITokenCoingecko>();
 
   const getTokenInformation = async (tokenId: string) => {
@@ -14,7 +18,9 @@ const PortfolioItem = (props: ITokenPortfolio) => {
   useEffect(() => {
     if (coingeckoId) {
       getTokenInformation(coingeckoId).then((d) => {
-        setTokenDetail(d.data);
+        const data = d.data as ITokenCoingecko;
+        setTokenDetail(data);
+        handleSetAmount(data.market_data.current_price.usd * amount);
       });
     }
   }, [coingeckoId]);
@@ -25,9 +31,11 @@ const PortfolioItem = (props: ITokenPortfolio) => {
       subtitle={symbol}
       accessories={[
         {
-          text: `${amount} ${symbol} ~ ${
+          text: `${
             tokenDetail?.market_data?.current_price?.usd ? tokenDetail?.market_data?.current_price?.usd * amount : ""
-          } USD`,
+          } $`,
+
+          tooltip: `${amount} ${symbol}`,
         },
       ]}
     />

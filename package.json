@@ -21,6 +21,12 @@
       "title": "Portfolio",
       "description": "",
       "mode": "view"
+    },
+    {
+      "name": "logout",
+      "title": "My Portfolio Logout",
+      "description": "Singout your google account",
+      "mode": "view"
     }
   ],
   "dependencies": {

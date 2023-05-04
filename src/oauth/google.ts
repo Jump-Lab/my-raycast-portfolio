@@ -14,6 +14,10 @@ const client = new OAuth.PKCEClient({
   description: "Connect your Google account\n(Raycast Extension Demo)",
 });
 
+export const Logout = async () => {
+  await client.removeTokens();
+};
+
 // Authorization
 export async function authorize(): Promise<string | undefined> {
   const tokenSet = await client.getTokens();

@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
-import { List, Detail, LocalStorage, Toast, showToast } from "@raycast/api";
+import { Detail, List, LocalStorage } from "@raycast/api";
+import { useCallback, useEffect, useState } from "react";
 
 import PortfolioItem from "./components/PortfolioItem";
-import * as google from "./oauth/google";
 import { LOCALSTORAGE_PORTFOLIO } from "./constant";
 import { IPortfolio } from "./type/token";
 import { getPortfolio } from "./utils/myPortoflioApi";
@@ -10,6 +9,7 @@ import { getPortfolio } from "./utils/myPortoflioApi";
 const Portfolio = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [portfolio, setPortfolio] = useState<IPortfolio>({});
+  const [totalAmount, setTotalAmount] = useState(0);
 
   // fetch portfolio
   useEffect(() => {
@@ -20,25 +20,32 @@ const Portfolio = () => {
         setPortfolio(localData);
 
         const test = await getPortfolio();
-        const {portfolio} = test
+        const { portfolio } = test;
         setPortfolio(portfolio);
         await LocalStorage.setItem(LOCALSTORAGE_PORTFOLIO, JSON.stringify(portfolio));
-        setIsLoading(false)
-      } catch(e) {
+        setIsLoading(false);
+      } catch (e) {
         console.error(e);
-        setIsLoading(false)
+        setIsLoading(false);
       }
     })();
   }, []);
+
+  const handleSetAmount = useCallback(
+    (val: number) => {
+      setTotalAmount((prev) => prev + val);
+    },
+    [totalAmount]
+  );
 
   if (isLoading) {
     return <Detail isLoading={isLoading} />;
   }
 
   return (
-    <List isLoading={isLoading}>
+    <List searchBarAccessory={undefined} navigationTitle={`Total: ${totalAmount} $`}>
       {Object.keys(portfolio).map((i) => (
-        <PortfolioItem key={portfolio[i].symbol} {...portfolio[i]} />
+        <PortfolioItem key={portfolio[i].symbol} {...portfolio[i]} handleSetAmount={handleSetAmount} />
       ))}
     </List>
   );
