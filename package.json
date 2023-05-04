@@ -24,7 +24,7 @@
     },
     {
       "name": "logout",
-      "title": "My Portfolio Logout",
+      "title": "Logout",
       "description": "Singout your google account",
       "mode": "view"
     }
