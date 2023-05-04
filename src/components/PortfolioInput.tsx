@@ -18,8 +18,8 @@ const PortfolioInput: React.FC<Props> = ({ tokenName, tokenSymbol, coingeckoId }
   const handleSubmitForm = async (amount: number) => {
     try {
       setLoading(true);
-      const req = await LocalStorage.getItem(LOCALSTORAGE_PORTFOLIO);
-      const listTokens: Record<string, ITokenPortfolio> = req ? JSON.parse(req.toString()) : {};
+      const localData = await LocalStorage.getItem(LOCALSTORAGE_PORTFOLIO);
+      const listTokens: Record<string, ITokenPortfolio> = localData ? JSON.parse(localData.toString()) : {};
 
       listTokens[tokenSymbol] = {
         amount,

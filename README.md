@@ -1,46 +1,48 @@
-<h1 align="center">
-  MOCCHI RAYCAST
-  <br>
-</h1>
+# My Portfolio
 
 ## Key Features
+### Search tokens, view detail of that tokens
+- Use https://api.mochi.pod.town/api/v1/defi/tokens to get list tokens
+- Use https://api.mochi.pod.town/api/v1/defi/coins/:id to get detail of a token
 
-- Search tokens, view detail of that tokens
-    - Use https://api.mochi.pod.town/api/v1/defi/tokens to get list tokens
-    - Use https://api.mochi.pod.town/api/v1/defi/coins/:id to get detail of a token
-- Manage your favorite tokens, get real time token's prices
-    - Store favorite tokens to localstorage 
-    - Use https://api.mochi.pod.town/api/v1/defi/coins/:id to calculate token price
-- Get swap rate when swap 2 tokens
-    - Use https://api.mochi.pod.town/api/v1/defi/coins/:id to get 2 tokens information then calculate swap rate
+### Mark your favorite tokens
+- Quickly view your token detail
+
+- Use https://api.mochi.pod.town/api/v1/defi/coins/:id to calculate token price
+
+- Manage your portfolio
+
+- Login using Google account
+
+- Search a token using above action
+
+- Add token with amount to portfolio
+
+- View portfolio detail, value
 
 ## How To Use
-
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Jump-Lab/Mochi-raycast
+git clone https://github.com/Jump-Lab/Mochi-raycast
 
 # Go into the repository
-$ cd Mochi-raycast
+cd Mochi-raycast
 
 # Install dependencies
-$ npm install
+npm install
 
 # Run the app
-$ npm run dev
+npm run dev
 ```
-
 ## Credits
-
 This software uses the following open source packages:
-
+- [Raycast](https://github.com/raycast)
 - [Axios](https://axios-http.com/)
-
+- [Firebase](https://github.com/firebase/)
 
 ## License
-
 MIT
 
 ---
