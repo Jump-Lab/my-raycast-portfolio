@@ -25,10 +25,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-git clone https://github.com/Jump-Lab/Mochi-raycast
+git clone https://github.com/Jump-Lab/my-raycast-portfolio.git
 
 # Go into the repository
-cd Mochi-raycast
+cd my-raycast-portfolio
 
 # Install dependencies
 npm install
@@ -41,6 +41,10 @@ This software uses the following open source packages:
 - [Raycast](https://github.com/raycast)
 - [Axios](https://axios-http.com/)
 - [Firebase](https://github.com/firebase/)
+
+## Builders
+- [Phong Vu](https://github.com/PhongVu07)
+- [Koha](https://github.com/kohana11)
 
 ## License
 MIT
